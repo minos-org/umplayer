@@ -1,0 +1,100 @@
+.TH umplayer 1 "July 2014" "The UMPlayer Project" "UMPlayer"
+.SH NAME
+UMPlayer \- The best GUI frontend for MPlayer
+.SH SYNOPSIS
+.B umplayer
+.I [\fI-minigui\fR] [\fI-mpcgui\fR] [\fI-defaultgui\fR] [\fI-config-path <directory>\fR]
+[\fI-send-action <action_name>\fR] [\fI-actions <action_list>\fR] [\fI[\-no]\-close\-at\-end\fR]
+[\fI[\-no]\-fullscreen\fR] [\fI\-sub <subtitle_file>\fR] [\fI-pos <x> <y>\fR] [\fI-size <width> <height>\fR]
+[\fI\-add\-to\-playlist\fR] [\fI\-help|\-\-help|\-h|\-?\fR] [\fI[\-playlist] <media1>\fR] [\fI[\-playlist] <media2>\fR]...
+.SH DESCRIPTION
+.TP
+UMPlayer is a GUI media player based on Qt 4, using \fBmplayer\fR(1) as its backend.
+.SH OPTIONS
+.TP
+.B \-minigui
+Open the mini GUI instead of the default one.
+.TP
+.B \-mpcgui
+Open the mpc GUI instead of the default one.
+.TP
+.B \-defaultgui
+Open the default gui.
+.TP
+.B \-config\-path <directory>
+Specify the directory for the configuration files (umplayer.ini, umplayer_files.ini...).
+.TP
+.B \-send\-action <action_name>
+Try to make a connection to another running instance and send to it the
+specified action.
+.IP
+\fIExample\fR: umplayer \-send\-action pause
+.IP
+The rest of options (if any) will be ignored and the application will exit. It will return 0
+on success or \-1 on failure.
+.TP
+.B \-actions <action_list>
+<action_list> is a list of actions separated by spaces. The
+actions will be executed just after loading the file (if
+any) in the same order as input. For switchable actions
+you can pass true or false as parameter.
+.IP
+\fIExample\fR: umplayer \-actions.br "fullscreen compact true"
+.IP
+Quotes are necessary in case you pass more than one action.
+.TP
+.B \-close\-at\-end
+Close the main window when the file/playlist
+finishes.
+.TP
+.B \-no\-close\-at\-end
+Do not close the main window when the file/playlist
+finishes.
+.TP
+.B \-fullscreen
+Play the video in fullscreen mode.
+.TP
+.B \-no\-fullscreen
+Play the video in windowed mode.
+.TP
+.B \-sub
+Specify the subtitle file to be loaded (for the first video only).
+.TP
+.B \-pos <x> <y>
+Specify the coordinates where the main window will be displayed.
+.TP
+.B \-size <width> <height>
+Specify the size of the main window.
+.TP
+.B \-h, \-help, \--help, \-?
+Show the help message and then exit.
+.TP
+.B -add\-to\-playlist
+If there is another instance running, the media will be
+added to that instance's playlist. If there is no other
+instance, this option will be ignored and the files will be
+opened in a new instance.
+.TP
+.B <media1> <media2> ...
+Any kind of file that UMPlayer can open. It can be a local file,
+a DVD (e.g. dvd://1), an Internet stream
+(e.g. mms://....) or a local playlist in format m3u or pls. If the
+\fB\-playlist\fR option is used, that means that UMPlayer will
+pass the \fB\-playlist\fR option to MPlayer, so MPlayer will
+handle the playlist, not UMPlayer.
+.SH "SEE ALSO"
+\fBmplayer\fR(1)
+.SH AUTHOR
+The author of UMPlayer is Ricardo Villalba <rvm@escomposlinux.org>.
+
+This manual page was written by Matvey Kozhev <sikon@lucidfox.org> and
+was updated for Javier López for the Minos project.
+
+Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU General Public License, Version 2 or any later
+version published by the Free Software Foundation. On Debian systems, the
+complete text of the GNU General Public License can be found in
+\fB/usr/share/common-licenses/GPL\fR.
+
+.SH BUGS
+Please submit bugs to \fBhttp://sourceforge.net/projects/umplayer\fR.

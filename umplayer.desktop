@@ -1,0 +1,24 @@
+[Desktop Entry]
+Categories=Qt;AudioVideo;Player;Video;
+Comment=A great MPlayer front-end
+Comment[es]=A great MPlayer front-end
+Comment[hu]=Egy grafikus MPlayer kiegészítés
+Comment[it]=Un grande front-end per MPlayer
+Comment[ja]=MPlayer フロントエンド
+Comment[nl]=Een uitstekend frontend voor MPlayer
+Comment[pl]=Świetna nakładka na Mplayer
+Comment[ru_RU]=Мощный интерфейс для MPlayer
+Comment[uk]=Потужний інтерфейс до MPlayer
+Exec=umplayer %f
+GenericName= UMPlayer Media Player
+GenericName[cs]=UMPlayer Přehrávač multimédií
+GenericName[es]=UMPlayerReproductor multimedia
+GenericName[hu]=UMPlayer Médialejátszó
+GenericName[pt]=UMPlayer Reprodutor de Média
+GenericName[ru]=UMPlayer Медиаплеер
+GenericName[uk]=UMPlayer Програвач медіа
+Icon=umplayer
+MimeType=audio/ac3;audio/mp4;audio/mpeg;audio/vnd.rn-realaudio;audio/vorbis;audio/x-adpcm;audio/x-matroska;audio/x-mp2;audio/x-mp3;audio/x-ms-wma;audio/x-vorbis;audio/x-wav;audio/mpegurl;audio/x-mpegurl;audio/x-pn-realaudio;audio/x-scpls;video/avi;video/mp4;video/flv;video/mpeg;video/quicktime;video/vnd.rn-realvideo;video/x-matroska;video/x-ms-asf;video/x-msvideo;video/x-ms-wmv;video/x-ogm;video/x-theora;
+Name=UMPlayer
+Type=Application
+X-KDE-StartupNotify=false

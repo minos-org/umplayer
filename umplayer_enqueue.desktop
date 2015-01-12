@@ -1,0 +1,22 @@
+[Desktop Entry]
+Categories=Qt;AudioVideo;Player;Video;
+Exec=umplayer -add-to-playlist %F
+Icon=umplayer
+MimeType=audio/ac3;audio/mp4;audio/mpeg;audio/vnd.rn-realaudio;audio/vorbis;audio/x-adpcm;audio/x-matroska;audio/x-mp2;audio/x-mp3;audio/x-ms-wma;audio/x-vorbis;audio/x-wav;audio/mpegurl;audio/x-mpegurl;audio/x-pn-realaudio;audio/x-scpls;video/avi;video/mp4;video/flv;video/mpeg;video/quicktime;video/vnd.rn-realvideo;video/x-matroska;video/x-ms-asf;video/x-msvideo;video/x-ms-wmv;video/x-ogm;video/x-theora;
+Name=Enqueue in UMPlayer
+Name[es]=Añadir a la lista de reproducción de UMPlayer
+Name[hu]=Felvétel az UMPlayer lejátszólistára
+Name[ja]=UMPlayer でエンキュー
+Name[it]=In coda in UMPlayer
+Name[nl]=In wachtrij van UMPlayer
+Name[uk]=Додати до черги UMPlayer
+Comment=Add file(s) to the UMPlayer playlist
+Comment[es]=Añade ficheros a la lista de reproducción de UMPlayer
+Comment[hu]=Fájl(ok) hozzáadása az UMPlayer lejátszólistájához
+Comment[ja]=ファイルを UMPlayer のプレイリストに追加します
+Comment[it]=Aggiungi alla lista di riproduzione di UMPlayer
+Comment[nl]=Bestanden toevoegen aan de afspeellijst van UMPlayer
+Comment[uk]=Додати файл(и) до переліку програвання UMPlayer
+Type=Application
+X-KDE-StartupNotify=false
+NoDisplay=true
