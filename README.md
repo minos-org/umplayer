@@ -8,12 +8,21 @@
 
 ## Quick start
 
-### On Ubuntu
+### On Ubuntu (only LTS releases)
+
+1. Set up the minos archive:
 
    ```
    $ sudo add-apt-repository ppa:minos-archive/main
+   ```
+   
+2. Install:
+
+   ```
    $ sudo apt-get update && sudo apt-get install umplayer
    ```
+
+3. Enjoy ☺!
 
 ### On other Linux distributions
 
@@ -32,3 +41,7 @@
 * Quit by pressing 'q', just as in mplayer{,2}
 * Use a modified black theme by default
 * Add an optional umplayer-dbg package
+
+## Feedback
+
+Please drop me an [email](mailto:m@javier.io) with your suggestions or open [an issue](https://github.com/minos-org/umplayer/issues) with your comments.
